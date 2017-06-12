@@ -21,10 +21,6 @@ public class DefaultDrawVisitor implements IDrawVisitor //TODO: MISSING CODE HER
         drawingManager.drawString(element.content, element.top_left, element.size, element.color);
     }
 
-    public void drawInput(Input element) {
-        drawingManager.drawRectangle(element.top_left, element.width, element.height, element.color);
-    }
-
     public void drawGUI(GUIManager guiManager) {
         //TODO: ADD MISSING CODE HERE
         guiManager.elements.reset();

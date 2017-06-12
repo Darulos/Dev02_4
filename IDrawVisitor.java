@@ -11,7 +11,5 @@ interface IDrawVisitor {
 
     void drawLabel(Label element);
 
-    void drawInput(Input element);
-
     void drawGUI(GUIManager gui);
 }

@@ -26,10 +26,6 @@ public class DefaultUpdateVisitor implements IUpdateVisitor {
         // Label doesn't require any update logic at this time
     }
 
-    public void updateInput(Input element, float dt) {
-
-    }
-
     @Override
     public void updateGUI(GUIManager guiManager, float dt) {
         //TODO: ADD MISSING CODE HERE

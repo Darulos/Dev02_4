@@ -12,7 +12,5 @@ public interface IUpdateVisitor {
 
     void updateLabel(Label element, float dt);
 
-    void updateInput(Input element, float dt);
-
     void updateGUI(GUIManager gui, float dt);
 }
