@@ -7,7 +7,7 @@ package Year_1.Dev02_4;
 
 public class GUIManager implements IUpdateable, IDrawable{
 
-    public ListIterator<IGUIElement> elements;
+    public ListIterator<GUIElement> elements;
 
     public void draw (IDrawVisitor visitor) {
         visitor.drawGUI(this);

@@ -27,8 +27,6 @@ public class Program extends Application{
     private IUpdateVisitor updateVisitor;
     private IDrawingManager drawingManager;
     private IInputManager inputManager;
-    // private IUpdateVisitor keyVisitor;
-    // private IInputManager keyManager;
 
     @Override
     public void start(Stage stage) {
@@ -84,8 +82,6 @@ public class Program extends Application{
         this.drawVisitor = new DefaultDrawVisitor(this.drawingManager);
         this.inputManager = new FXMouse();
         this.updateVisitor = new DefaultUpdateVisitor(this.inputManager);
-        // this.keyManager = new Key();
-        // this.
 
         new AnimationTimer() {
             @Override

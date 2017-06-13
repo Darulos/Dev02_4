@@ -3,25 +3,18 @@ package Year_1.Dev02_4;
 
 // Describes a button GUI element
 
-public class Button implements IGUIElement{
+public class Button extends GUIDecorator{
 
     public float width;
     public float height;
     public CustomColor color;
-    public Label label;
-    public Point top_left;
     public Runnable action;
 
-    public Button(String text, Point top_left, int size, CustomColor color) {
-        this.color = color;
-        this.top_left = top_left;
-        this.label = new LabelConstructor().instantiate(text, top_left, size, color);
-    }
-
     public Button(String text, Point top_left, int size, CustomColor color, float width, float height, Runnable action) {
-        this(text, top_left, size, color);
+        super(top_left, text, size, color);
         this.width = width;
         this.height = height;
+        this.color = color;
         this.action = action;
     }
 
